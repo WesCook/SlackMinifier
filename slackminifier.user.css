@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     1.0.0
+@version     1.0.1
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -60,6 +60,7 @@
 		position: absolute;
 		right: 173px;
 		top: 12px;
+		max-width: 157px;
 	}
 
 	/* Hide nested thread title as it blocks search bar */
