@@ -4,7 +4,7 @@ Slack on the web includes many navigation bars, seldom-used icons, and other vis
 
 While this has been released publicly, it's only been tested within a single organization.  Feel free to submit any bugs/PRs, but I can't promise widespread support.  I will try to fix any broken changes caused by a Slack update however.
 
-Designed for use with [Stylus][https://add0n.com/stylus.html].
+Designed for use with [Stylus](https://add0n.com/stylus.html).
 
 
 ## Changes
