@@ -1,0 +1,74 @@
+/* ==UserStyle==
+@name        SlackMinifier
+@namespace   github.com/WesCook/SlackMinifier
+@version     1.0.0
+@description Reclaim some screen real estate
+@author      Wes Cook (https://wescook.ca)
+@homepageURL https://github.com/WesCook/SlackMinifier
+@license MIT
+==/UserStyle== */
+
+@-moz-document domain("app.slack.com") {
+
+	/* Remove space for top bar */
+	.p-client {
+		grid-template-rows: 0 auto min-content;
+	}
+
+	/* Hide history button */
+	.p-top_nav__history_menu {
+		display: none;
+	}
+
+	/* Hide help button */
+	.p-top_nav__help {
+		display: none;
+	}
+
+	/* Hide bookmark bar.  Move Pinned to top-right */
+	.p-bookmarks_bar_container {
+		position: absolute;
+		visibility: hidden;
+		top: 6px;
+		right: 330px;
+		width: 105px;
+		z-index: 5;
+	}
+	.p-bookmarks_bar__pins_popover_button_wrapper {
+		visibility: visible;
+	}
+
+	/* Shrink titlebar to allow room for right-most elements */
+	.p-view_header__topic_container {
+		margin-right: 230px;
+	}
+
+	/* Move avatar */
+	.p-top_nav__button {
+		position: absolute;
+		top: 11px;
+		right: 20px;
+	}
+
+	/* Move channel members over */
+	.p-avatar_stack--details {
+		margin-right: 48px;
+	}
+
+	/* Move search bar to top-right */
+	.p-top_nav__search__container {
+		position: absolute;
+		right: 173px;
+		top: 12px;
+	}
+
+	/* Hide nested thread title as it blocks search bar */
+	.p-flexpane__title_container {
+		display: none !important;
+	}
+
+	/* Move Close Thread button to left of avatar */
+	.p-flexpane_header__primary {
+		margin-right: 38px;
+	}
+}
