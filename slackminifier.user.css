@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     1.0.1
+@version     1.0.2
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -22,7 +22,7 @@
 
 	/* Hide help button */
 	.p-top_nav__help {
-		display: none;
+		display: none !important;
 	}
 
 	/* Hide bookmark bar.  Move Pinned to top-right */
