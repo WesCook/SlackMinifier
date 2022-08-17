@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     1.1.0
+@version     1.1.1
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -11,8 +11,8 @@
 @-moz-document domain("app.slack.com") {
 
 	/* Remove space for top bar */
-	.p-client {
-		grid-template-rows: 0 auto min-content;
+	.p-workspace-layout {
+		grid-template-rows: 0 auto;
 	}
 
 	/* Hide history button */
