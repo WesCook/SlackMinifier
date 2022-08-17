@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     1.1.1
+@version     1.1.2
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -13,6 +13,9 @@
 	/* Remove space for top bar */
 	.p-workspace-layout {
 		grid-template-rows: 0 auto;
+	}
+	.p-workspace__primary_view {
+		max-height: 100vh !important;
 	}
 
 	/* Hide history button */
