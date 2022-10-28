@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     1.1.3
+@version     1.1.4
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -80,5 +80,10 @@
 	/* Move Close Thread button to left of avatar */
 	.p-flexpane_header__primary {
 		margin-right: 56px;
+	}
+
+	/* Hide Upgrade Button */
+	.p-ia__sidebar_header__upgrade_cta {
+		display: none;
 	}
 }
