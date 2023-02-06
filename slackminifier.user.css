@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     1.1.5
+@version     1.1.6
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -43,7 +43,7 @@
 
 	/* Shrink titlebar to allow room for right-most elements */
 	.p-view_header__topic_container {
-		margin-right: 230px;
+		margin-right: 268px;
 	}
 
 	/* Move avatar */
