@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     1.1.4
+@version     1.1.5
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -32,8 +32,8 @@
 	.p-bookmarks_bar_container {
 		position: absolute;
 		visibility: hidden;
-		top: 6px;
-		right: 380px;
+		top: 2px;
+		right: 403px;
 		width: 105px;
 		z-index: 5;
 	}
@@ -50,12 +50,12 @@
 	.p-top_nav__button {
 		position: absolute;
 		top: 11px;
-		right: 20px;
+		right: 0;
 	}
 
 	/* Move channel members over and de-emphasize border color */
 	.p-view_header__actions {
-		margin-right: 47px;
+		margin-right: 40px;
 	}
 	.p-view_header__avatar_stack_container {
 		border-color: #666;
@@ -67,8 +67,8 @@
 	/* Move search bar to top-right */
 	.p-top_nav__search__container {
 		position: absolute;
-		right: 208px;
-		top: 12px;
+		right: 235px;
+		top: 10px;
 		max-width: 157px;
 	}
 
@@ -79,7 +79,7 @@
 
 	/* Move Close Thread button to left of avatar */
 	.p-flexpane_header__primary {
-		margin-right: 56px;
+		margin-right: 35px;
 	}
 
 	/* Hide Upgrade Button */
