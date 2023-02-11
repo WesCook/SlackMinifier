@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     1.1.6
+@version     1.1.7
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -33,7 +33,7 @@
 		position: absolute;
 		visibility: hidden;
 		top: 2px;
-		right: 403px;
+		right: 398px;
 		width: 105px;
 		z-index: 5;
 	}
@@ -47,15 +47,19 @@
 	}
 
 	/* Move avatar */
+	.c-coachmark-anchor,
+	.p-top_nav__right {
+		position: static;
+	}
 	.p-top_nav__button {
 		position: absolute;
 		top: 11px;
-		right: 0;
+		right: 13px;
 	}
 
 	/* Move channel members over and de-emphasize border color */
 	.p-view_header__actions {
-		margin-right: 40px;
+		margin-right: 35px;
 	}
 	.p-view_header__avatar_stack_container {
 		border-color: #666;
@@ -67,7 +71,7 @@
 	/* Move search bar to top-right */
 	.p-top_nav__search__container {
 		position: absolute;
-		right: 235px;
+		right: 228px;
 		top: 10px;
 		max-width: 157px;
 	}
