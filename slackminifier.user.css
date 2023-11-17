@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     1.1.7
+@version     2.0.0
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -10,32 +10,71 @@
 
 @-moz-document domain("app.slack.com") {
 
-	/* Remove space for top bar */
-	.p-workspace-layout {
-		grid-template-rows: 0 auto;
+	/* Remove "tab rail", left-most bar */
+	.p-tab_rail,
+	.p-control_strip {
+		display: none;
 	}
-	.p-workspace__primary_view {
+
+	/* Span workspace across full width */
+	.p-client_workspace--including_tab_rail {
+		grid-template: "p-client-workspace" !important;
+		min-height: 100vh;
+	}
+
+	/* Hide top bar */
+	.p-ia4_top_nav {
+		height: 0 !important;
+	}
+	
+	/* Extend height of panes */
+	.p-view_contents--primary,
+	.p-view_contents--secondary,
+	.p-view_contents--sidebar {
 		max-height: 100vh !important;
 	}
-
-	/* Hide history button */
-	.p-top_nav__history_menu {
-		display: none !important;
+	
+	/* Remove framing around workspace*/
+	.p-client_workspace {
+		padding: 0 !important;
+	}
+	.p-client_workspace__layout {
+		border: 0 !important;
+	}
+	
+	/* Move search bar to top-right */
+	.p-top_nav__search__container {
+		position: absolute;
+		right: 282px;
+		top: 10px;
+		max-width: 157px;
+		z-index: 2;
+	}
+	
+	/* Color search bar */
+	.p-top_nav__search__container {
+		background-color: transparent !important;
+		border: 1px solid var(--dt_color-otl-ter) !important;
 	}
 
-	/* Hide help button */
-	.p-top_nav__help {
+	/* Remove history and navigation arrows */
+	.p-ia4_top_nav__left_container {
 		display: none !important;
+	}
+	
+	/* Remove help button */
+	.p-top_nav__help {
+		display: none;
 	}
 
 	/* Hide bookmark bar.  Move Pinned to top-right */
 	.p-bookmarks_bar_container {
 		position: absolute;
 		visibility: hidden;
-		top: 2px;
-		right: 398px;
-		width: 105px;
-		z-index: 5;
+		top: 8px;
+		right: 422px;
+		width: 125px;
+		z-index: 300;
 	}
 	.p-bookmarks_bar__pins_popover_button_wrapper {
 		visibility: visible;
@@ -43,51 +82,6 @@
 
 	/* Shrink titlebar to allow room for right-most elements */
 	.p-view_header__topic_container {
-		margin-right: 268px;
-	}
-
-	/* Move avatar */
-	.c-coachmark-anchor,
-	.p-top_nav__right {
-		position: static;
-	}
-	.p-top_nav__button {
-		position: absolute;
-		top: 11px;
-		right: 13px;
-	}
-
-	/* Move channel members over and de-emphasize border color */
-	.p-view_header__actions {
-		margin-right: 35px;
-	}
-	.p-view_header__avatar_stack_container {
-		border-color: #666;
-	}
-	.p-view_header__avatar_stack_inner_container {
-		border-color: #666;
-	}
-
-	/* Move search bar to top-right */
-	.p-top_nav__search__container {
-		position: absolute;
-		right: 228px;
-		top: 10px;
-		max-width: 157px;
-	}
-
-	/* Hide nested thread title as it blocks search bar */
-	.p-flexpane__title_container {
-		display: none !important;
-	}
-
-	/* Move Close Thread button to left of avatar */
-	.p-flexpane_header__primary {
-		margin-right: 35px;
-	}
-
-	/* Hide Upgrade Button */
-	.p-ia__sidebar_header__upgrade_cta {
-		display: none;
+		margin-right: 250px;
 	}
 }
