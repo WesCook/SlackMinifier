@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     2.0.0
+@version     2.1.0
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -16,17 +16,21 @@
 		display: none;
 	}
 
-	/* Span workspace across full width */
-	.p-client_workspace--including_tab_rail {
-		grid-template: "p-client-workspace" !important;
-		min-height: 100vh;
-	}
-
 	/* Hide top bar */
 	.p-ia4_top_nav {
 		height: 0 !important;
 	}
 	
+	/* Span workspace horizontally */
+	.p-ia4_client .p-client_workspace_wrapper {
+		grid-template: "p-client-workspace";
+	}
+	
+	/* Span workspace vertically */
+	.p-client_workspace {
+		min-height: 100vh;
+	}
+
 	/* Extend height of panes */
 	.p-view_contents--primary,
 	.p-view_contents--secondary,
