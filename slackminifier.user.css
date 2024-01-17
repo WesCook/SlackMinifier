@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     2.1.0
+@version     2.1.1
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -23,7 +23,7 @@
 	
 	/* Span workspace horizontally */
 	.p-ia4_client .p-client_workspace_wrapper {
-		grid-template: "p-client-workspace";
+		grid-template: "p-client-workspace" !important;
 	}
 	
 	/* Span workspace vertically */
