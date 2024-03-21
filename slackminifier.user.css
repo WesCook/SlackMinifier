@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     2.1.1
+@version     2.1.2
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -20,12 +20,12 @@
 	.p-ia4_top_nav {
 		height: 0 !important;
 	}
-	
+
 	/* Span workspace horizontally */
 	.p-ia4_client .p-client_workspace_wrapper {
 		grid-template: "p-client-workspace" !important;
 	}
-	
+
 	/* Span workspace vertically */
 	.p-client_workspace {
 		min-height: 100vh;
@@ -37,7 +37,7 @@
 	.p-view_contents--sidebar {
 		max-height: 100vh !important;
 	}
-	
+
 	/* Remove framing around workspace*/
 	.p-client_workspace {
 		padding: 0 !important;
@@ -45,7 +45,7 @@
 	.p-client_workspace__layout {
 		border: 0 !important;
 	}
-	
+
 	/* Move search bar to top-right */
 	.p-top_nav__search__container {
 		position: absolute;
@@ -54,7 +54,7 @@
 		max-width: 157px;
 		z-index: 2;
 	}
-	
+
 	/* Color search bar */
 	.p-top_nav__search__container {
 		background-color: transparent !important;
@@ -65,7 +65,12 @@
 	.p-ia4_top_nav__left_container {
 		display: none !important;
 	}
-	
+
+	/* Upgrade Plan button */
+	.p-upgrades_button_v2 {
+		display: none;
+	}
+
 	/* Remove help button */
 	.p-top_nav__help {
 		display: none;
