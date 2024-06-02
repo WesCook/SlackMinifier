@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        SlackMinifier
 @namespace   github.com/WesCook/SlackMinifier
-@version     2.1.2
+@version     2.1.3
 @description Reclaim some screen real estate
 @author      Wes Cook (https://wescook.ca)
 @homepageURL https://github.com/WesCook/SlackMinifier
@@ -67,7 +67,7 @@
 	}
 
 	/* Upgrade Plan button */
-	.p-upgrades_button_v2 {
+	.p-upgrades_button {
 		display: none;
 	}
 
